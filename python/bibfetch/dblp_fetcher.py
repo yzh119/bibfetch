@@ -13,7 +13,7 @@ __all__ = ["fetch_dblp_bibtex"]
 
 DBLP_BASE_URL = "http://dblp.uni-trier.de/"
 DBLP_PUB_SEARCH_URL = DBLP_BASE_URL + "search/api/publ?q={title}&h={num_results}"
-DBLP_BIBTEX_URL = DBLP_BASE_URL + "rec/bib2/{key}.bib"
+DBLP_BIBTEX_URL = DBLP_BASE_URL + "rec/bib/{key}.bib"
 
 
 def _download_content(url: str, decode: bool = False):
