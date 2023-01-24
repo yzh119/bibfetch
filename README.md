@@ -25,5 +25,5 @@ optional arguments:
 
 Example
 ```
-python3 -m bibfetch -t "Discerning the dominant out-of-order performance advantage"
+bibfetch -t "Discerning the dominant out-of-order performance advantage"
 ```
