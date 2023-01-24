@@ -20,7 +20,7 @@ optional arguments:
   --title TITLE, -t TITLE
                         Title of the paper to fetch.
   --number NUMBER, -n NUMBER
-                        Maximum number of search results to fetch.
+                        Maximum number of search results to fetch, defaults to 10.
 ```
 
 Example
