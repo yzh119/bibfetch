@@ -5,7 +5,7 @@ Fetch bibtex info in command line interface from academic search engines like db
 
 ```bash
 cd python
-python3 setup.py install
+pip3 install -e .
 ```
 
 ## Usage

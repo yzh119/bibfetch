@@ -1,5 +1,13 @@
 from distutils.core import setup
 
+import os
+
+lib_folder = os.path.dirname(os.path.realpath(__file__))
+requirement_path = lib_folder + "/requirements.txt"
+requirements = []
+if os.path.isfile(requirement_path):
+    with open(requirement_path) as f:
+        requirements = f.read().splitlines()
 setup(
     name="bibfetch",
     version="0.0.1",
@@ -8,10 +16,10 @@ setup(
     author_email="expye@outlook.com",
     url="git@github.com:yzh119/bibfetch.git",
     packages=["bibfetch"],
-    requires=["lxml", "urllib"],
+    install_requires=requirements,
     entry_points={
-        'console_scripts': [
-            'bibfetch = bibfetch.__main__:main',
+        "console_scripts": [
+            "bibfetch = bibfetch.__main__:main",
         ]
     },
 )
