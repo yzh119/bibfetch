@@ -1,5 +1,5 @@
 # bibfetch
-Fetch bibtex info from top search results in dblp.
+Fetch bibtex info in command line interface from academic search engines like dblp.
 
 ## Installation
 
