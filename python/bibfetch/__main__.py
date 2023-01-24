@@ -2,7 +2,7 @@ import argparse
 from . import get_fetcher
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser("Bibtex fetcher command line interface.")
     parser.add_argument(
         "--backend",
@@ -22,5 +22,11 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     fetcher = get_fetcher(args.backend)
-    for item in fetcher(args.title, args.number):
+    papers = fetcher(args.title, args.number)
+    print("Found {} matches:".format(len(papers)))
+    for item in papers:
         print(item.pretty_print())
+
+
+if __name__ == "__main__":
+    main()

@@ -16,7 +16,7 @@ usage: Bibtex fetcher command line interface. [-h] [--backend BACKEND] [--title 
 optional arguments:
   -h, --help            show this help message and exit
   --backend BACKEND, -b BACKEND
-                        Backend to use for fetching bibtex (choice: dblp).
+                        Backend to use for fetching bibtex, only dblp is supported up to now.
   --title TITLE, -t TITLE
                         Title of the paper to fetch.
   --number NUMBER, -n NUMBER
