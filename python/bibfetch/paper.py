@@ -9,11 +9,11 @@ class Paper(object):
         self.title = title
         self.authors = authors
         self.year = year
-        self.vemue = venue
+        self.venue = venue
         self.bibtex = bibtex
 
     def pretty_print(self):
-        ret += "====================\n"
+        ret = "=" * 80 + "\n"
         ret += "Title:   {}\n".format(self.title)
         ret += "Authors: {}\n".format(", ".join(self.authors))
         ret += "Year:    {}\n".format(self.year)
