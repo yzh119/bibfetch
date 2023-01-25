@@ -42,10 +42,10 @@ def fetch_dblp_bibtex(title: str, max_num_search_results: int = 10):
     papers = []
     for elem in results:
         authors = elem.xpath("authors/author/text()")
-        title = _get_item_text(elem, "title/text()")
-        year = _get_item_text(elem, "year/text()")
-        venue = _get_item_text(elem, "venue/text()")
-        key = _get_item_text(elem, "venue/text()")
+        title = _get_item_text(elem, "title")
+        year = _get_item_text(elem, "year")
+        venue = _get_item_text(elem, "venue")
+        key = _get_item_text(elem, "key")
         if key is None:
             raise RuntimeError(
                 "No key found for paper: {}, failed to download bibtex.".format(title)
