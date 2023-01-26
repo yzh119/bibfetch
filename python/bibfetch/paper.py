@@ -4,7 +4,7 @@
 
 class Paper(object):
     def __init__(
-        self, title: str, authors: str, year: str, venue: str, bibtex: str
+        self, title: str, authors: str, year: int, venue: str, bibtex: str
     ) -> None:
         self.title = title
         self.authors = authors

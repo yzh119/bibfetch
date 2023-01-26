@@ -9,7 +9,7 @@ def main():
         "-b",
         type=str,
         default="dblp",
-        help="Backend to use for fetching bibtex (choice: dblp).",
+        help="Backend to use for fetching bibtex, supported backends: dblp/semanticscholar.",
     )
     parser.add_argument("--title", "-t", type=str, help="Title of the paper to fetch.")
     parser.add_argument(
@@ -23,7 +23,7 @@ def main():
     args = parser.parse_args()
     fetcher = get_fetcher(args.backend)
     papers = fetcher(args.title, args.number)
-    print("Found {} matches:".format(len(papers)))
+    print("Show top {} matches:".format(len(papers)))
     for item in papers:
         print(item.pretty_print())
 
