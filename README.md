@@ -57,4 +57,3 @@ Search for bibtex from input box:
   - User will be prompt to enter paper title, backend, and number of entries to fetch, and bibfetch would search bibtex using the configuration.
 3. Select text then right click and select "Search BibTex".
   - bibfetch would search bibtex of selected text using default configuration.
-

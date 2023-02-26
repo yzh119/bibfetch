@@ -26,6 +26,15 @@ You can install the python package via:
 pip install bibfetch
 ```
 
+# Usage
+
+1. Enter command palatte and type "bibfetch: Search BibTex".
+  - User will be prompt to enter paper title and bibfetch would search bibtex using default configuration.
+2. Enter command palatte and type "bibfetch: Search BibTex With..."
+  - User will be prompt to enter paper title, backend, and number of entries to fetch, and bibfetch would search bibtex using the configuration.
+3. Select text then right click and select "Search BibTex".
+  - bibfetch would search bibtex of selected text using default configuration.
+
 ## Customize VSCode bibfetch extension
 
 There are several settings that can be customized for bibfetch extension in VSCode:
