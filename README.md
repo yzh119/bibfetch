@@ -41,6 +41,11 @@ Example
 bibfetch -t "Discerning the dominant out-of-order performance advantage"
 ```
 
-## VSCode Usage
+## VSCode Demo
 
-TODO
+Search for bibtext from selected text:
+![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-for-selected-text.gif)
+
+Search for bibtex from input box:
+![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-from-input-box.gif)
+

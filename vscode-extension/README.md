@@ -3,7 +3,12 @@
 VSCode Extension for bibfetch.
 
 ## Demo
-TODO
+
+Search for bibtext from selected text:
+![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-for-selected-text.gif)
+
+Search for bibtex from input box:
+![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-from-input-box.gif)
 
 ## Install the Extension to VSCode
 
