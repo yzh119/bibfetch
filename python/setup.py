@@ -14,7 +14,7 @@ setup(
     description="Fetch bibtex information from academic search engines.",
     author="Zihao Ye",
     author_email="expye@outlook.com",
-    url="git@github.com:yzh119/bibfetch.git",
+    url="https://github.com/yzh119/bibfetch",
     packages=["bibfetch"],
     install_requires=requirements,
     entry_points={

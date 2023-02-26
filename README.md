@@ -3,10 +3,17 @@ Fetch bibtex information in command line interface/vscode from academic search e
 
 ## Installation
 
-To install the python package, run the following command in the root directory of the project.
+Install the python package from pypi:
 
 ```bash
-cd python
+pip install bibfetch
+```
+
+User can also clone the github repository and install from source:
+
+```bash
+git clone git@github.com:yzh119/bibfetch.git
+cd bibfetch/python
 pip3 install .
 ```
 

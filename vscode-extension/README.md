@@ -11,13 +11,12 @@ TODO
 
 You can get the extensions by searching `bibfetch` in the VSCode marketplace.
 
-### Build from Source
+### Dependency
 
-Before installing this extension, please make sure you have already installed python package `bibfetch` either from pypi or from source.
+Before installing this extension, please make sure you have already installed python package `bibfetch`.
 
-Then run the following command under the root directory of this repository:
+You can install the python package via:
+
 ```bash
-cd vscode-extension
-npm install && npm run compile
-cd .. && cp -r vscode-extension ~/.vscode/extensions/bibfetch
+pip install bibfetch
 ```
