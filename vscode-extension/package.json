@@ -41,6 +41,26 @@
           "when": "editorTextFocus"
         }
       ]
+    },
+    "configuration": {
+      "title": "bibfetch",
+      "properties": {
+        "bibfetch.pythonpath": {
+          "type": "string",
+          "default": "python",
+          "description": "Select the python interpreter to run bibfetch."
+        },
+        "bibfetch.defaultBackend": {
+          "type": "string",
+          "default": "dblp",
+          "description": "Select the default backend (dblp/semanticscholar) to search bibtex."
+        },
+        "bibfetch.defaultNumEntries": {
+          "type": "number",
+          "default": 10,
+          "description": "Select the default number of entries to search bibtex."
+        }
+      }
     }
   },
   "scripts": {

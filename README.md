@@ -48,4 +48,3 @@ Search for bibtext from selected text:
 
 Search for bibtex from input box:
 ![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-from-input-box.gif)
-
