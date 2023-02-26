@@ -13,6 +13,15 @@ export function activate(context: vscode.ExtensionContext) {
 	let defaultNumEntries: number = config.get("bibfetch.defaultNumEntries", 10);
 	let pyCommand = config.get("bibfetch.pythonpath", "python3");
 
+	// Check if the Python package is installed.
+	try {
+			execSync(`${pyCommand} -m pip show bibfetch`);
+	} catch (error) {
+			vscode.window.showErrorMessage('bibfetch python package is not installed.' +
+																		 ' Please run "pip3 install bibfetch" and reload the window');
+			return ;
+	}
+
 	let callBibfetch = (paperTitle: string, backend: string, numEntries: number) => {
 		try {
 			let outputBuf = execSync(`${pyCommand} -m bibfetch -t "${paperTitle}" -b ${backend} -n ${numEntries}`);

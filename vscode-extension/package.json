@@ -2,15 +2,15 @@
   "name": "bibfetch",
   "displayName": "bibfetch",
   "description": "Fetch bibtex information from academic search engines like dblp.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },
   "license": "GPL-3.0",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/yzh119/bibfetch"
-	},
+    "type": "git",
+    "url": "https://github.com/yzh119/bibfetch"
+  },
   "publisher": "expye",
   "categories": [
     "Other"
@@ -23,15 +23,15 @@
     "commands": [
       {
         "command": "bibfetch.searchBibtexDefault",
-        "title": "bibfetch: search bibtex of an article with default setting."
+        "title": "bibfetch: Search BibTex"
       },
       {
         "command": "bibfetch.searchBibtexWith",
-        "title": "bibfetch: search bibtex of an article with custom setting."
+        "title": "bibfetch: Search BibTex With..."
       },
       {
         "command": "bibfetch.searchBibtexForSelectedText",
-        "title": "Search bibtex of selected text"
+        "title": "Search BibTex"
       }
     ],
     "menus": {
@@ -47,8 +47,8 @@
       "properties": {
         "bibfetch.pythonpath": {
           "type": "string",
-          "default": "python",
-          "description": "Select the python interpreter to run bibfetch."
+          "default": "python3",
+          "description": "Set the interpreter path for the python environment where bibfetch is installed."
         },
         "bibfetch.defaultBackend": {
           "type": "string",

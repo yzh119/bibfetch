@@ -48,3 +48,13 @@ Search for bibtext from selected text:
 
 Search for bibtex from input box:
 ![](https://github.com/yzh119/web-data/blob/main/bibfetch/search-from-input-box.gif)
+
+### Usage
+
+1. Enter command palatte and type "bibfetch: Search BibTex".
+  - User will be prompt to enter paper title and bibfetch would search bibtex using default configuration.
+2. Enter command palatte and type "bibfetch: Search BibTex With..."
+  - User will be prompt to enter paper title, backend, and number of entries to fetch, and bibfetch would search bibtex using the configuration.
+3. Select text then right click and select "Search BibTex".
+  - bibfetch would search bibtex of selected text using default configuration.
+

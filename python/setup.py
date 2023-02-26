@@ -10,9 +10,10 @@ if os.path.isfile(requirement_path):
         requirements = f.read().splitlines()
 setup(
     name="bibfetch",
-    version="0.0.1",
+    version="0.0.3",
     description="Fetch bibtex information from academic search engines.",
     author="Zihao Ye",
+    license="GPL-3.0",
     author_email="expye@outlook.com",
     url="https://github.com/yzh119/bibfetch",
     packages=["bibfetch"],
